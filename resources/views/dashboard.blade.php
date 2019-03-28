@@ -9,7 +9,7 @@
     </div>
 
     <div class="col-sm-7">
-        <a href="#" class="btn btn-primary float-right">Nueva tarea</a>
+        <a href="#" class="btn btn-primary float-right" data-toggle="modal" data-target="#create">Nueva tarea</a>
 
         <table class="table table-hover table-sprite">
             <thead>
@@ -34,6 +34,7 @@
 				</tr>
 			</tbody>
 		</table>
+        @include('create')
 	</div>
 	<div class="col-sm-5">
 		<pre>
