@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,8 +11,19 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.scripts([
-   'resources/js/vue.js',
-   'resources/js/axios.js',
-   'resources/js/app.js',
-   ], 'public/js/app.js');
+mix.scripts(
+    [
+        "resources/js/jquery.js",
+        "resources/js/bootstrap.js",
+        "resources/js/toastr.js",
+        "resources/js/vue.js",
+        "resources/js/vue.js",
+        "resources/js/vue.js",
+        "resources/js/axios.js",
+        "resources/js/app.js"
+    ],
+    "public/js/app.js"
+).styles(
+    ["resources/css/bootstrap.css", "resources/css/toastr.css"],
+    "public/css/app.css"
+);
